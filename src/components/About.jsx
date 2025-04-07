@@ -33,7 +33,7 @@ Always curious, always building. Let’s create something cool together 🚀
                 My Tech Arsenal includes
               </div>
               <div className="md:hidden grid w-full  max-h-64 overflow-y-auto grid-cols-2 gap-3 p-2 py-4 mb-6">
-                {[
+                {["JavaScript","TypeScript",
                   "ReactJs",
                   "NodeJs",
                   "ExpressJs",
