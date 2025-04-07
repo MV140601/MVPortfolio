@@ -49,7 +49,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden mt-4 flex flex-col space-y-4 items-start px-4">
+        <div className="md:hidden  flex flex-col text-center justify-evenly items-start px-4 h-screen">
           {['About Me', 'Experience', 'Projects', 'Contact'].map((item, idx) => (
             <div
               key={idx}

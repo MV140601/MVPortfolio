@@ -3,12 +3,12 @@ import hiimg from "../utils/2edited.png";
 
 const About = () => {
   return (
-    <div className="h-screen   overflow-hidden bg-[#011829]">
+    <div className=" overflow-hidden bg-[#011829]">
       <div className=" flex justify-between w-full h-full">
         <div className="w-full h-full flex flex-col">
           <div className="flex md:flex-row flex-col mt-0 md:mt-5  gap-2 p-4">
             <div className="flex flex-col  w-full md:w-[50%]">
-              <div className="md:text-lg text-md font-bold border-red-900 border-l-4 px-2 text-white">
+              <div className="md:text-lg text-md font-bold border-red-500 border-l-4 px-2 text-white">
                 About Me
               </div>
               <div className=" hidden md:block md:text-xl md:tracking-wider text-md text-gray-400 p-2">
@@ -29,7 +29,7 @@ Always curious, always building. Let’s create something cool together 🚀
               </div>
             </div>
             <div className="flex flex-col md:w-[50%] w-full">
-              <div className="text-md md:text-lg font-bold border-red-900 border-l-4 px-2 text-white mt-0 md:mt-3">
+              <div className="text-md md:text-lg font-bold border-red-500 border-l-4 px-2 text-white mt-0 md:mt-3">
                 My Tech Arsenal includes
               </div>
               <div className="md:hidden grid w-full  max-h-64 overflow-y-auto grid-cols-2 gap-3 p-2 py-4 mb-6">
@@ -62,7 +62,7 @@ Always curious, always building. Let’s create something cool together 🚀
 
               {/* 💻 Desktop Grid Layout */}
               <div className="hidden md:grid md:text-lg text-sm text-gray-400 grid-cols-3 gap-3 p-2 py-4 mb-6">
-                {[
+                {["JavaScript","TypeScript",
                   "ReactJs",
                   "NodeJs",
                   "ExpressJs",
