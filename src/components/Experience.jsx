@@ -1,21 +1,28 @@
-import React from "react";
+import React, { useRef } from "react";
 import AnimatedLines from "./AnimatedLines";
 import AnimatedL2 from "./AnimatedL2";
+import { motion, useInView } from 'framer-motion';
 
 const Experience = () => {
+  
   return (
-    <div className="relative overflow-hidden bg-inherit flex flex-col items-center space-y-2">
+    <motion.div     className="relative overflow-hidden bg-inherit flex flex-col items-center space-y-2">
       <AnimatedL2></AnimatedL2>
-      <div className="md:text-5xl text-4xl text-white mt-5 mb-5 flex  items-center h-[10%] space-x-2 ">
-        <div className="text-red-500">---  </div>
+      <motion.div initial={{opacity:0}}
+     whileInView={{opacity: 10}} transition={{duration:1}} className="md:text-5xl text-4xl text-white mt-5 mb-5 flex  items-center h-[10%] space-x-2 ">
+        <motion.div className="text-red-500">---  </motion.div>
         <span className="text-white text-shadow-lg">My Experience</span>
-        <div className="text-red-500">  ---</div>
-      </div>
-      <div className=" flex flex-col justify-evenly space-y-3 w-full  mt-5 h-[90%] items-center">
-        <div className="flex flew-row  shadow-[#8c98a41a] border-[0.5px] border-[#8396a91a] shadow-xl h-[30%] w-[80%] bg-[#0e0d23] rounded-xl">
-          <div className="w-full flex flex-col px-4 py-2  ">
-            <div className=" border-b-2 border-white p-2 flex md:flex-row flex-col justify-between">
-              <div className="flex md:w-[30%] flex-row-reverse md:flex-row w-full space-x-3 items-center italic">
+        <motion.div className="text-red-500">  ---</motion.div>
+      </motion.div>
+      <motion.div className=" flex flex-col justify-evenly space-y-3 w-full  mt-5 h-[90%] items-center">
+
+
+        <motion.div  initial={{ x: -100, opacity: 0 }}
+  whileInView={{ x: 0, opacity: 1 }}
+   transition={{ duration: 1 }} className="flex flew-row  shadow-[#8c98a41a] border-[0.5px] border-[#8396a91a] shadow-xl h-[30%] w-[80%] bg-[#0e0d23] rounded-xl">
+          <motion.div className="w-full flex flex-col px-4 py-2  ">
+            <motion.div className=" border-b-2 border-white p-2 flex md:flex-row flex-col justify-between">
+              <motion.div className="flex md:w-[30%] flex-row-reverse md:flex-row w-full space-x-3 items-center italic">
                 <span className="font-extrabold text-lg text-red-500">
                   Konnect Insights{" "}
                 </span>
@@ -25,8 +32,8 @@ const Experience = () => {
                   {" "}
                   Software Developer{" "}
                 </span>
-              </div>
-              <div className="flex  flex-row-reverse md:flex-row md:w-[30%] w-full space-x-3 items-center italic">
+              </motion.div>
+              <motion.div className="flex  flex-row-reverse md:flex-row md:w-[30%] w-full space-x-3 items-center italic">
                 <span className="font-bold text-lg text-red-500">
                   Sept2024–Present
                 </span>
@@ -35,9 +42,9 @@ const Experience = () => {
                   <span className="font-semibold text-md text-white">
                   Mumbai,India  
                 </span>
-              </div>
-            </div>
-            <div className="text-md text-white flex flex-col ">
+              </motion.div>
+            </motion.div>
+            <motion.div className="text-md text-white flex flex-col ">
               <p>
                 {" "}
                 - Integrated AI-powered automation using OpenAI's APIs,
@@ -58,13 +65,16 @@ const Experience = () => {
                 role-wise agent actions, ensuring better compliance and
                 controlled access for different user levels.
               </p>
-            </div>
-          </div>
-        </div>
-        <div className="flex flew-row  shadow-[#8c98a41a] border-[0.5px] border-[#8396a91a] shadow-xl h-[30%] w-[80%] bg-[#0e0d23]  rounded-xl">
-        <div className="w-full flex flex-col px-4 py-2  ">
-            <div className=" border-b-2 border-white p-2 flex md:flex-row flex-col justify-between">
-              <div className="flex md:w-[30%] flex-row-reverse md:flex-row w-full space-x-3 items-center italic">
+            </motion.div>
+          </motion.div>
+        </motion.div>
+
+        <motion.div  initial={{ x: 100, opacity: 0 }}
+  whileInView={{ x: 0, opacity: 1 }}
+   transition={{ duration: 1 }} className="flex flew-row  shadow-[#8c98a41a] border-[0.5px] border-[#8396a91a] shadow-xl h-[30%] w-[80%] bg-[#0e0d23]  rounded-xl">
+        <motion.div className="w-full flex flex-col px-4 py-2  ">
+            <motion.div className=" border-b-2 border-white p-2 flex md:flex-row flex-col justify-between">
+              <motion.div className="flex md:w-[30%] flex-row-reverse md:flex-row w-full space-x-3 items-center italic">
                 <span className="font-extrabold text-lg text-red-500">
                   Konnect Insights{" "}
                 </span>
@@ -74,8 +84,8 @@ const Experience = () => {
                   {" "}
                  Jr. Software Developer{" "}
                 </span>
-              </div>
-              <div className="flex  flex-row-reverse md:flex-row md:w-[30%] w-full space-x-3 items-center italic">
+              </motion.div>
+              <motion.div className="flex  flex-row-reverse md:flex-row md:w-[30%] w-full space-x-3 items-center italic">
                 <span className="font-bold text-lg text-red-500">
                   Aug2023–Aug2024
                 </span>
@@ -84,9 +94,9 @@ const Experience = () => {
                   <span className="font-semibold text-md text-white">
                   Mumbai,India  
                 </span>
-              </div>
-            </div>
-            <div className="text-md text-white flex flex-col ">
+              </motion.div>
+            </motion.div>
+            <motion.div className="text-md text-white flex flex-col ">
               <p>
                 {" "}
                 - Integrated AI-powered automation using OpenAI's APIs,
@@ -107,13 +117,17 @@ const Experience = () => {
                 role-wise agent actions, ensuring better compliance and
                 controlled access for different user levels.
               </p>
-            </div>
-          </div>
-        </div>{" "}
-        <div className="flex flew-row  shadow-[#8c98a41a] border-[0.5px] border-[#8396a91a] shadow-xl h-[30%] w-[80%] bg-[#0e0d23]  rounded-xl">
-        <div className="w-full flex flex-col px-4 py-2  ">
-            <div className=" border-b-2 border-white p-2 flex md:flex-row flex-col justify-between">
-              <div className="flex md:w-[30%] flex-row-reverse md:flex-row w-full space-x-3 items-center italic">
+            </motion.div>
+          </motion.div>
+        </motion.div>{" "}
+
+
+        <motion.div  initial={{ x: -100, opacity: 0 }}
+  whileInView={{ x: 0, opacity: 1 }}
+   transition={{ duration: 1 }} className="flex flew-row  shadow-[#8c98a41a] border-[0.5px] border-[#8396a91a] shadow-xl h-[30%] w-[80%] bg-[#0e0d23]  rounded-xl">
+        <motion.div className="w-full flex flex-col px-4 py-2  ">
+            <motion.div className=" border-b-2 border-white p-2 flex md:flex-row flex-col justify-between">
+              <motion.div className="flex md:w-[30%] flex-row-reverse md:flex-row w-full space-x-3 items-center italic">
                 <span className="font-extrabold text-lg text-red-500">
                 ITJOBXS{" "}
                 </span>
@@ -123,8 +137,8 @@ const Experience = () => {
                   {" "}
                   Web Development Intern{" "}
                 </span>
-              </div>
-              <div className="flex  flex-row-reverse md:flex-row md:w-[30%] w-full space-x-3 items-center italic">
+              </motion.div>
+              <motion.div className="flex  flex-row-reverse md:flex-row md:w-[30%] w-full space-x-3 items-center italic">
                 <span className="font-bold text-lg text-red-500">
                   April2023–June2023
                 </span>
@@ -133,9 +147,9 @@ const Experience = () => {
                   <span className="font-semibold text-md text-white">
                   Mumbai,India  
                 </span>
-              </div>
-            </div>
-            <div className="text-md text-white flex flex-col ">
+              </motion.div>
+            </motion.div>
+            <motion.div className="text-md text-white flex flex-col ">
               <p>
                 {" "}
                 - Integrated AI-powered automation using OpenAI's APIs,
@@ -156,12 +170,12 @@ const Experience = () => {
                 role-wise agent actions, ensuring better compliance and
                 controlled access for different user levels.
               </p>
-            </div>
-          </div>
-        </div>
-        <div></div>
-      </div>
-    </div>
+            </motion.div>
+          </motion.div>
+        </motion.div>
+        <motion.div></motion.div>
+      </motion.div>
+    </motion.div>
   );
 };
 
