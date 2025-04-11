@@ -3,7 +3,7 @@ import hiimg from "../utils/2edited.png";
 
 const About = () => {
   return (
-    <div className=" overflow-hidden bg-[#011829]">
+    <div className="  overflow-hidden bg-[#011829]">
       <div className=" flex justify-between w-full h-full">
         <div className="w-full h-full flex flex-col">
           <div className="flex md:flex-row flex-col mt-0 md:mt-5  gap-2 p-4">
