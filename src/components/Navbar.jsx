@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -23,19 +24,26 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
-        <div className="text-3xl font-serif italic text-orange-700 cursor-pointer">
+        <Link to="Home" 
+        smooth={true} 
+        duration={500}
+         className="text-3xl font-serif italic text-orange-700 cursor-pointer">
           Mayuresh V.
-        </div>
+        </Link>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex space-x-8">
           {['About Me', 'Experience', 'Projects', 'Contact'].map((item, idx) => (
-            <div
+            <Link
+            to={item.replace(' ','')} 
+        smooth={true} 
+        duration={500}
+       
               key={idx}
               className="text-xl font-sans cursor-pointer hover:border-b-2 hover:text-orange-700 hover:font-semibold"
             >
               {item}
-            </div>
+            </Link>
           ))}
         </div>
 
@@ -51,12 +59,15 @@ const Navbar = () => {
       {menuOpen && (
         <div className="md:hidden  flex flex-col text-center justify-evenly items-start px-4 h-screen">
           {['About Me', 'Experience', 'Projects', 'Contact'].map((item, idx) => (
-            <div
+            <Link
+            to={item.replace(' ','')} 
+            smooth={true} 
+            duration={500}
               key={idx}
               className="text-lg font-sans cursor-pointer hover:border-b-2 hover:text-orange-700 hover:font-semibold w-full"
             >
               {item}
-            </div>
+            </Link>
           ))}
         </div>
       )}

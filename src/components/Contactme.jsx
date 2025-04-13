@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {motion} from 'framer-motion';
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 const Contactme = () => {
     const [formData, setFormData] = useState({
         name: '',
@@ -14,10 +14,10 @@ const Contactme = () => {
     
       const handleSubmit = (e) => {
         e.preventDefault();
-    
-        const serviceID = 'service_7sgqq7g';
-        const templateID = 'your_template_id';
-        const publicKey = 'Xp9avJYMXCMSzc50L';
+        const serviceID = import.meta.env.VITE_SERVICE_ID;
+        const templateID = import.meta.env.VITE_TEMPLATE_ID;
+        const publicKey = import.meta.env.VITE_PUBLIC_KEY;
+        
     
         const templateParams = {
           from_name: formData.name,
@@ -37,7 +37,7 @@ const Contactme = () => {
       };
     
   return (
-    <motion.div className="relative overflow-hidden bg-inherit flex flex-col items-center py-10 px-4 space-y-6">
+    <motion.div id='Contact' className="relative overflow-hidden bg-inherit flex flex-col items-center py-10 px-4 space-y-6">
     <motion.div className="md:text-5xl text-3xl text-white flex items-center space-x-2">
       <motion.div className="text-red-500">---</motion.div>
       <span className="text-white text-shadow-lg ">Contact me </span>

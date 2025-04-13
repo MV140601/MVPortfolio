@@ -6,7 +6,7 @@ import { motion, useInView } from 'framer-motion';
 const Experience = () => {
   
   return (
-    <motion.div     className="relative overflow-hidden bg-inherit flex flex-col items-center space-y-2">
+    <motion.div id="Experience"  className="relative overflow-hidden bg-inherit flex flex-col items-center space-y-2">
       <AnimatedL2></AnimatedL2>
       <motion.div initial={{opacity:0}}
      whileInView={{opacity: 10}} transition={{duration:1}} className="md:text-5xl text-4xl text-white mt-5 mb-5 flex  items-center h-[10%] space-x-2 ">
@@ -99,23 +99,17 @@ const Experience = () => {
             <motion.div className="text-md text-white flex flex-col ">
               <p>
                 {" "}
-                - Integrated AI-powered automation using OpenAI's APIs,
-                implementing features like automatic summarization and workflow
-                automation, reducing manual effort for clients and increasing
-                efficiency.{" "}
+                - Migrated the  legacy CMS from ASPX to React.js (TypeScript) and ASP.NET Core, including RESTful API development, optimized SQL queries, and secure authentication.{" "}
               </p>
               <p>
-                - Developed a bulk action feature that allows users to perform
-                operations on multiple tickets simultaneously, significantly
-                improving productivity and streamlining workflow within the
-                tool.{" "}
+                - Designed and developed a complete module from scratch, implementing backend logic (ASP.NET Core), efficient stored procedures, and a responsive UI (JavaScript, Bootstrap).
+                {" "}
               </p>
               <p>
-                - Enhanced the role-based access control system by: <br/>- Developing
-                new roles and permissions, enabling clients to define more
-                granular restrictions.<br/> - Improving security and flexibility for
-                role-wise agent actions, ensuring better compliance and
-                controlled access for different user levels.
+                - Enhanced an ongoing module, implementing core features and new functionalities based on client requirements.
+              </p>
+              <p>
+                - Developed new features and resolved critical bugs, significantly improving stability and performance.
               </p>
             </motion.div>
           </motion.div>
@@ -145,30 +139,20 @@ const Experience = () => {
                 <span className="hidden md:block font-bold text-lg text-red-500"> / </span>
                 <span className="md:hidden block  font-extrabold text-2xl text-red-500 ml-2"> - </span>              
                   <span className="font-semibold text-md text-white">
-                  Mumbai,India  
+                  Remote,India  
                 </span>
               </motion.div>
             </motion.div>
             <motion.div className="text-md text-white flex flex-col ">
               <p>
                 {" "}
-                - Integrated AI-powered automation using OpenAI's APIs,
-                implementing features like automatic summarization and workflow
-                automation, reducing manual effort for clients and increasing
-                efficiency.{" "}
+                - Developed a fully responsive web page for a section of itjobxs.com, optimizing the user experience..{" "}
               </p>
               <p>
-                - Developed a bulk action feature that allows users to perform
-                operations on multiple tickets simultaneously, significantly
-                improving productivity and streamlining workflow within the
-                tool.{" "}
+                - Implemented user authentication and bot detection, tackling security challenges and removing fake bots and posts..{" "}
               </p>
               <p>
-                - Enhanced the role-based access control system by: <br/>- Developing
-                new roles and permissions, enabling clients to define more
-                granular restrictions.<br/> - Improving security and flexibility for
-                role-wise agent actions, ensuring better compliance and
-                controlled access for different user levels.
+                - Integrated Google reCAPTCHA, adding an extra layer of security to protect against automated attacks..
               </p>
             </motion.div>
           </motion.div>

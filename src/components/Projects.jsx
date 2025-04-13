@@ -3,9 +3,14 @@ import { motion } from 'framer-motion';
 
 const projects = [
   {
+    title: "AI-Resume Builder",
+    description: "AI Resume Builder is a smart platform that helps users create professional resumes with ease. It features a chatbot interface that collects user input and generates tailored resume templates. The tool provides AI-powered suggestions and feedback based on the user's projects and experience. Users can choose from customizable or system templates and edit them in real time for a personalized touch.",
+    tech:"OPEN-AI API,ReactJs ,NodejJs ,ExpressJs ,MongoDb ,Redux-Toolkit ,Prisma ORM ,ShadCN",
+    link: "#"
+  },{
     title: "OneChat",
     description: "A fully responsive chat application using SOCKET.IO for instant one-to-one and group messaging, ensuring a seamless and interactive real-time experience.Users can create chat groups, upload/download files, and maintain organized conversations with state management handled via Zustand for optimal performance.",
-    tech:"ReactJs ,NodejJs ,ExpressJs ,MongoDb ,Redux-Toolkit ,Socket.IO ,ShadCN",
+    tech:"ReactJs ,NodejJs ,ExpressJs ,MongoDb ,Redux-Toolkit , Zustand,Socket.IO ,ShadCN",
     link: "#"
   },
   {
@@ -25,18 +30,12 @@ const projects = [
     description: "A Rental Booking Platform   where users can list their properties for rent and browse available stays.Guests can view detailed property information, check availability, and make bookings.The platform includes secure login, profile management, and an intuitive user interface for smooth interactions.",
     tech:"ReactJs , NodejJs , ExpressJs , MongoDb , Redux-Toolkit , TailwindCss",
     link: "#"
-  },
-  {
-    title: "Life By Blood",
-    description: "An AI tool that reads API documentation and provides endpoint recommendations.",
-    tech:"ReactJs , NodejJs , ExpressJs , MongoDb , Redux-Toolki t ,TailwindCss",
-    link: "#"
-  },
+  }
 ];
 
 export const Projects = () => {
   return (
-    <motion.div className="relative overflow-hidden bg-[#011829] flex flex-col items-center py-10 px-4 space-y-6">
+    <motion.div id='Projects' className="relative overflow-hidden bg-[#011829] flex flex-col items-center py-10 px-4 space-y-6">
       <motion.div className="md:text-5xl text-3xl text-white flex items-center space-x-2">
         <motion.div className="text-red-500">---</motion.div>
         <span className="text-white text-shadow-lg">My Projects</span>
