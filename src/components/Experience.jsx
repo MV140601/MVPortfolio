@@ -47,16 +47,10 @@ const Experience = () => {
             <motion.div className="text-md text-white flex flex-col ">
               <p>
                 {" "}
-                - Integrated AI-powered automation using OpenAI's APIs,
-                implementing features like automatic summarization and workflow
-                automation, reducing manual effort for clients and increasing
-                efficiency.{" "}
+                - Implemented AI-powered automation by integrating external APIs ( OpenAI,OLama) to deliver features such as automatic summarization and workflow automation, significantly reducing manual effort and enhancing overall efficiency.{" "}
               </p>
               <p>
-                - Developed a bulk action feature that allows users to perform
-                operations on multiple tickets simultaneously, significantly
-                improving productivity and streamlining workflow within the
-                tool.{" "}
+                - Built a bulk action capability that enables users to perform operations on multiple records simultaneously, improving productivity and streamlining workflows within the platform.{" "}
               </p>
               <p>
                 - Enhanced the role-based access control system by: <br/>- Developing
@@ -99,18 +93,26 @@ const Experience = () => {
             <motion.div className="text-md text-white flex flex-col ">
               <p>
                 {" "}
-                - Migrated the  legacy CMS from ASPX to React.js (TypeScript) and ASP.NET Core, including RESTful API development, optimized SQL queries, and secure authentication.{" "}
-              </p>
+                Led the migration of a legacy application to a modern full-stack architecture, which involved:<br/>
+  -Designing and developing RESTful APIs to support a new, responsive frontend.<br/>
+  - Writing optimized database queries and stored procedures for efficient data handling. <br/>
+  - Implementing a secure and scalable user authentication system.<br/>
+  - Rebuilding UI components using modern frontend frameworks to enhance performance and maintainability.    
+            </p><br/>
               <p>
-                - Designed and developed a complete module from scratch, implementing backend logic (ASP.NET Core), efficient stored procedures, and a responsive UI (JavaScript, Bootstrap).
-                {" "}
-              </p>
+                 Designed and developed a complete module from scratch, which included:  <br/>
+  - Building the  backend logic and buiness rules.  <br/>
+  - Writing efficient stored procedures for data retrieval and manipulation.  <br/>
+  - Developing the frontend UI using JavaScript and Bootstrap, ensuring a seamless user experience.        {" "}
+              </p><br/>
               <p>
-                - Enhanced an ongoing module, implementing core features and new functionalities based on client requirements.
+                 Took ownership of an ongoing module, successfully completing its development by:  <br/>
+  - Implementing the required core features.  <br/>
+  - Enhancing functionality by adding new features based on client requirements.  
               </p>
+              <br/>
               <p>
-                - Developed new features and resolved critical bugs, significantly improving stability and performance.
-              </p>
+                 Developed new features and resolved  critical bugs, improving the stability and performance of the company’s product/tool.             </p>
             </motion.div>
           </motion.div>
         </motion.div>{" "}
@@ -146,13 +148,13 @@ const Experience = () => {
             <motion.div className="text-md text-white flex flex-col ">
               <p>
                 {" "}
-                - Developed a fully responsive web page for a section of itjobxs.com, optimizing the user experience..{" "}
+                - Developed a fully responsive web page for a section of itjobxs.com, optimizing the user experience.{" "}
               </p>
               <p>
-                - Implemented user authentication and bot detection, tackling security challenges and removing fake bots and posts..{" "}
+                - Implemented user authentication and bot detection, tackling security challenges and removing fake bots and posts.{" "}
               </p>
               <p>
-                - Integrated Google reCAPTCHA, adding an extra layer of security to protect against automated attacks..
+                - Integrated Google reCAPTCHA, adding an extra layer of security to protect against automated attacks.
               </p>
             </motion.div>
           </motion.div>
